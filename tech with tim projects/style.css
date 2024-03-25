@@ -1,0 +1,72 @@
+:root {
+    --body-bg: rgb(192, 86, 202);
+    --nav-bg: rgb(144, 198, 252);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Main styling */
+
+
+
+/* Navigation bar styling */
+
+nav{
+    background: var(--nav-bg);
+    top: 0;
+    position: sticky;
+}
+
+.nav-list, a{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-list li{
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    border-radius: 100vh 100vh 100vh 100vh;
+}
+
+.nav-list li:hover{
+    background: rgb(118, 186, 209);
+    transition: 0.5s;
+    
+}
+
+.nav-list li.active{
+    background: var(--body-bg);
+}
+
+/* Header stlying */
+
+.logo-wrapper{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
